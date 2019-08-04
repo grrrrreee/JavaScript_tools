@@ -1,11 +1,11 @@
-// 전체 선택기능
-function checkAll(chk) {
-    for(i=0; i<chk.length; i++){
-        if(chk[i].checked == true){
-            // chk[i].checked=false;
-            chk[i].checked=true;
-        }else{
-            chk[i].checked = true;
+// 체크된 박스들 개수를 반화하는 것
+function send() {
+    var count =0;
+    var box = document.getElementsByName("box")
+    for(i=0; i<box.length; i++) {
+        if(box[i].checked == true) {
+            count ++;
         }
     }
+    console.log(count);
 }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="tab">
+        <button class="tablinks active" onclick="open(event, 'A')">A</button>
+        <button class="tablinks" onclick="open(event, 'B')">B</button>
+        <button class="tablinks" onclick="open(event, 'C')">C</button>
+    </div>
+
+    <div id="A" class="tabcontent" style="display: block;">
+        <h3>A</h3>
+        <p>This is tab A.</p>
+    </div>
+
+    <div id="B" class="tabcontent" style="display: none;">
+        <h3>B</h3>
+        <p>This is tab B.</p>
+    </div>
+
+    <div id="C" class="tabcontent" style="display: none;">
+        <h3>C</h3>
+        <p>This is tab C.</p>
+    </div>
+</body>
+</html>
