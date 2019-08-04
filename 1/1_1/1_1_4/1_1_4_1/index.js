@@ -1,4 +1,4 @@
-// 체크된 박스들 개수를 반화하는 것
+// 체크된 박스들 개수를 반환하는 것
 function send() {
     var count =0;
     var box = document.getElementsByName("box")
