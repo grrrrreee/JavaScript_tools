@@ -20,6 +20,7 @@ Only Vanilla(pure) Javascript is used in repository.
 ### 1 
 
 #### 1_1 체크 박스 
+참고 링크 : http://chongmoa.com/javascript/8388
 
 ##### 1_1_1 체크 할 때, 안 할 때 같은 알람 ... 변화에 대한 알림
 
@@ -56,12 +57,19 @@ Only Vanilla(pure) Javascript is used in repository.
 #### 2_1 페이지 전환  내용 추가해야 함
 
 #### 2_2 Tab 구현
+참고 링크 : https://hyounjp.tistory.com/10  https://zoltantothcom.github.io/vanilla-js-tabs/  
 
-##### 2_2_1 간단한 2개 Tab 구현, 넘길 때마다 내용도 같이 변함 / 참고 링크 : https://hyounjp.tistory.com/10
+##### 2_2_1 간단한 2개 Tab 구현, 넘길 때마다 내용도 같이 변함 
 
 ##### 2_2_2 현재 잘 안됨
 
-#### 2_3 내용 접고 피기 참고 링크 : https://mainia.tistory.com/2710
+#### 2_3 내용 접고 피기 
+
+##### 2_3_1 1개 접고 피기 (보이기 없애기와 거의 유사)
+
+##### 2_3_2 다수 접고 피기 (보이기 없애기와 거의 유사)
+
+참고 링크 : https://mainia.tistory.com/2710
 
 ### 3 
 
