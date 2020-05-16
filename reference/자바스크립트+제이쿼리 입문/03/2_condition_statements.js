@@ -21,7 +21,7 @@ if(조건식) {
 // if_ex.1
 var num= 10;
 if(num<500){    //true 반환
-    document.write("hello")''
+    document.write("hello");
 }
 
 // if_ex.2
