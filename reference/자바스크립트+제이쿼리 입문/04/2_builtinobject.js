@@ -180,3 +180,44 @@ if(gameNum == com) {
     document.write("<img src=\"images/game_2.jpg\">");
 }
 
+// array object
+
+/* 
+var 참조 변수 = new Array();
+참조 변수[0]= 값 1; 참조 변수[1] = 값 2; 참조 변수[2] = 값 3; .... 참조 변수[n-1] = 값 n;
+var 참조 변수 = new Array(값 1, 값 2, 값 3, ... 값 n);
+var 참조 변수 = [값 1, 값 2, 값 3, ... 값 n];
+*/
+
+// array object ex.1
+var d = new Array();
+d[0] = 30;
+d[1] = "따르릉";
+d[2] = true;
+
+// array object ex.2
+var d = new Array(30, "따르릉", true);
+
+// array object ex.3
+var d = [30, "따르릉", true];
+
+// 배열 객체에 저장된 데이터를 불러올 때는 아래와 같은 기본형을 사용한다. 
+// 참조 변수[인덱스 번호];
+
+// array oject ex.4
+var arr = [30, "따르릉", true];
+
+document.write("<h3>배열값 가져오기 - 1</h3>");
+document.write(arr[0], "<br>");
+document.write(arr[1], "<br>");
+document.write(arr[2], "<br>");
+
+document.write("<h3>배열값 가져오기 - 2</h3>");
+for(var i = 0; i < arr.length ; i++) {
+    document.write(arr[i], "<br>");
+}
+
+document.write("<h3>배열값 가져오기 - 3</h3>");
+for(i in arr) {
+    document.write(arr[i], "<br>");
+}
