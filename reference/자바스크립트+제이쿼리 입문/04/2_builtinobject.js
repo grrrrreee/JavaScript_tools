@@ -235,3 +235,38 @@ shift()                    : 배열 객체에 저장된 데이터 중 첫 번째
 unshift(new data)          : 배열 객체의 가장 앞의 인덱스에 새 데이터를 삽입합니다.
 length                     : 배열에 저장된 총 데이터의 개수를 반환합니다.
 */
+
+// array object ex.5
+var arr_1 = ["사당", "교대", "방배", "강남"];
+var arr_2 = ["신사", "압구정", "옥수"];
+
+var result = arr_1.join("-");
+console.log(result);        // 사당-교대-방배-강남
+
+result = arr_1.concat(arr_2);
+console.log(result);        // 사당, 교대, 방배, 강남, 신사, 압구정, 옥수
+
+result = arr_1.slice(1, 3);
+console.log(result);        // 교대, 방배
+
+arr_1.sort();
+console.log(arr_1);         // 강남, 교대, 방배, 사당
+
+arr_2.reverse();
+console.log(arr_2);         // 옥수, 압구정, 신사
+
+// array object ex.6
+var greenArr = ["교대", "방배", "강남"];
+var yellowArr = ["미금", "정자", "수서"];
+
+greenArr.splice(2, 1, "서초", "역삼");
+console.log(greenArr);          // 교대, 방배, 서초, 역삼, 2 즉, 3번째 요소부터 새로운 요소들을 넣는다.
+
+var data1 = yellowArr.pop();    // 수서를 data1에 넣고 제거함.
+var data2 = yellowArr.shift();  // 미금을 data2에 넣고 제거함.
+
+yellowArr.push(data2);          // 미금을 마지막에 넣기
+console.log(yellowArr);         // 정자, 미금
+
+yellowArr.unshift(data1);       // 수서를 제일 앞에
+console.log(yellowArr);         // 수서, 정자, 미금
