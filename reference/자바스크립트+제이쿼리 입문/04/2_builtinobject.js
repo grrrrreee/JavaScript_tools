@@ -180,7 +180,15 @@ if(gameNum == com) {
     document.write("<img src=\"images/game_2.jpg\">");
 }
 
-// array object
+/* 
+**********
+**********
+**********
+array object
+**********
+**********
+**********
+*/
 
 /* 
 var 참조 변수 = new Array();
@@ -270,3 +278,72 @@ console.log(yellowArr);         // 정자, 미금
 
 yellowArr.unshift(data1);       // 수서를 제일 앞에
 console.log(yellowArr);         // 수서, 정자, 미금
+
+/* 
+**********
+**********
+**********
+string object
+**********
+**********
+**********
+*/
+
+// 묹열 객체는 문자형 데이터를 객체로 취급하는 것으로, 가장 많이 사용되는 것이다. 
+
+/* 
+문자열 객체를 생성하는 기본형은 아래와 같이 new 키워드와 String() 메서드를 사용한다.
+
+var 참조 변수 = new String(문자형 데이터)
+var t = new String("hello javascript");
+
+var 참조 변수 = 문자형 데이터
+var t = "hello javascript";
+*/ 
+
+/*
+charAt(index)                 : 문자열에서 인덱스 번호에 해당하는 문자를 반환함. var str = "web he she"; str.charAt(2); <- "b"를 반환함.
+indexOf("찾을 문자")            : 문자열에서 왼쪽부터 찾을 문자와 일치하는 문자를 찾아 제일 먼저 일치하는 문자의 인덱스 번호를 반환함. 만일 찾는 문자가 없으면 -1을 반환함. var str = "web he she he"; str.indexOf("he"); <- 4를 반환함.
+lastIndexOf("찾을 문자")        : 문자열에서 오른쪽부터 찾을 문자와 일치하는 문자를 찾아 제일 먼저 일치하는 문자의 인덱스 번호를 반환함. 만일 찾는 문자가 없으면 -1을 반환함. var str = "web he she he"; str.lastIndexOf("he"); <- 11을 반환함.
+match("찾을 문자")              : 문자열에서 왼쪽부터 찾을 문자와 일치하는 문자를 찾아 제일 제일 먼저 찾은 문자를 반환함. 만일 찾는 문자가 없으면 null을 반환함. var str = "web he she he"; str.match("boy"); <- null을 반환함.
+replace("바꿀 문자", "새 문자")   : 문자열에서 왼쪽부터 바꿀 문자와 일치하는 문자를 찾아 제일 먼저 찾은 문자를 새 문자로 치환함. var str = "web he she"; str.replace("web", "html"); "htnk he she"를 반환함.
+search("찾을 문자")             : 문자열에서 왼쪽부터 찾을 문자와 일치하는 만자를 찾아 제일 먼저 일치하는 인덱스 번호를 반환함. var str = "web he she"; str.search("he"); <- 4를 반환함.
+slice(a, b)                   : a개의 문자를 자르고 b번째 이후에 문자를 자른 후 남은 문자를 반환함. var str = "hello javascript" str.slice(3,7); <- "lo j"를 반환함 str.slice(3,7);은 문자열에서 3글자 "hel"까지 자르고 7번째 이후 글자인 "j" 이후부터 "avascript"를 나머지 "lo j"를 반한홤. var str = "hello javascript" str.slice(3, -3); <- "llo javascr"를 반환함. 여기에서 -1은 뒤에서부터 첫 번째 글자를 가리킴.
+substring(a, b)               : a 인덱스부터 b 인덱스 이전 구간의 문자를 반환함. var str = "hello javscript" str.substring(3,7); <- "lo j"를 반환함. var str = "hello javscript" str.substring(3, -3) <- "hel"을 반환함. 여기에서 -3은 인덱스 0을 가리킴. 그러므로 인데스 0부터 인데스 3 이전 구간의 문자를 반환함.
+substr(a, 문자 개수)            : 문자열에 a 인덱스부터 지정한 문자 개수만큼 문자열을 반환함, var str = "hello javascript" str.substring(3, 2); <- "lo"를 반환함 str.str(3,2);은 문자열에서 인덱스 3인 "l"부터 2글자를 가져와서 "lo"를 반환합니다.
+split("문자")                  : 지정한 문자를 기준으로 문자 데이터를 나누어 배열에 저장하여 반환함. var str = "webmobilek2002"; var arr = str.split("k");
+toLowerCase()                 : 문자열에서 영문 대문자를 모두 소문자로 바꿈. var str = "ABC"; str.toLowerCase(); <- "abc"를 반환함
+toUpperCase()                 : 문자열에서 영문 소문자를 모두 대문자로 바꿈. var str = "abc"; str.toUpperCase(); <- "ABC"를 반환함
+length                        : 문자열에서 문자의 개수를 반환함. var str = "hello welcome"; str.length <- 13을 반환함.
+concat("새로운 문자")            : 문자열에 새로운 문자열을 결합합니다. var str = "hello"; str.concat("web"); <- "hello web"을 반환함.
+charCodeAt(index)             : 문자열 index에 해당 문자의 아스키 코드값을 반환합니다. var str = "ABC", str.charCodeAt(0) <- "A"의 아스키 코드값 65를 반환함. 
+fromCharCode(아스키 코드 값)     : 아스키 코드값에 해당하는 문자를 반환함. String.fromCharCode(65); <- "A"를 반환함.
+trim()                        : 문자의 앞 또는 뒤에 공백 문자열을 삭제함. (" hello" -> "hello") str = "hello", str.trim(); <- 공백이 제거된 "hello"를 반환함. 
+*/
+
+var t = "Hello Thank you good luck to you";
+document.write(t.charAt(16), "<br/>");                  // 16 즉, 17번째(빈칸포함) 글자인 g를 반환한다. 
+document.write(t.indexOf("you"), "<br/>");              // 첫 you의 시작은 13번째 즉, 인덱스가 12가 반환된다.
+
+document.write(t.indexOf("you", 16), "<br/>");          // 16 즉, 17번째(빈칸포함) 이후에 첫 you는 30번째 즉, 인덱스가 29가 반환된다.
+document.write(t.lastIndexOf("you"), "<br/>");          // 뒤에서부터 보이는 첫 you는 30번째 즉, 인덱스 29가 반환된다. 
+document.write(t.lastIndexOf("you", 25), "<br/>");      // 인덱스 25 즉, 26번째 문자 기준으로 가장 첫 왼쪽에 있는 you의 위치 13번째 즉, 인덱스 12가 반환된다.
+document.write(t.match("luck"), "<br/>");               // 문자열 앞에서부터 luck과 일치하는 문자열을 반환함.
+document.write(t.search("you"), "<br/>");               // 문자열 앞에서부터 제일 먼저 발견된 "you"의 인덱스 값을 반환함. -> 12
+document.write(t.substr(21, 4), "<br/>");               // 문자열 인덱스 21 즉, 22번째 글자부터 4개의 글자를 가져옴 -> luck
+document.write(t.substring(6, 12), "<br/>");            // 문자열 인덱스 6부터 12 즉, 7번째 글자부터 13번째 글자를 가져옴 -> Thank
+document.write(t.replace("you", "me"), "<br/>");        // 문자열 왼쪽에서부터 제일 먼저 발견된 "you"를 "me"로 치환함. 
+document.write(t.toLowerCase(), "<br/>");               // 문자열의 영문자가 모두 소문자로 바뀐 문자열을 반환함.
+document.write(t.toUpperCase(), "<br/>");               // 문자열의 영문자가 모두 대문자로 바뀐 문자열을 반환함.
+document.write(t.length, "<br/>");                      // 문자열의 문자 총 개수를 반환함. 이때 공백도 문자로 취급함 -> 32
+
+var s = t.split(" ");                                   // 공백 문자를 기준으로 문자를 분리함. 분리된 문자열은 배열에 저장되어 s에 할당.
+
+document.write(s[0], "<br/>");                          // s의 인덱스 0에 저장된 문자열을 출력함. -> "Hello"
+document.write(s[4], "<br/>");                          // s의 인덱스 4에 저장된 문자열을 출력함 -> "luck"
+
+var str = "A";
+var t = str.charCodeAt(0);                              // 문자에 저장된 문자열 중 0번 인덱스의 문자 "A"의 아스키 코드값을 반환함.
+
+document.write(t);                                      // "A"의 아스키 코드값 65를 출력함.
+document.write(String.fromCharCode(65), "<br/>");       // 코드값 65에 해당하는 문자를 반환함. 
