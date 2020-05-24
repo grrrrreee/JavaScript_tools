@@ -321,6 +321,7 @@ fromCharCode(아스키 코드 값)     : 아스키 코드값에 해당하는 문
 trim()                        : 문자의 앞 또는 뒤에 공백 문자열을 삭제함. (" hello" -> "hello") str = "hello", str.trim(); <- 공백이 제거된 "hello"를 반환함. 
 */
 
+// string object ex.1
 var t = "Hello Thank you good luck to you";
 document.write(t.charAt(16), "<br/>");                  // 16 즉, 17번째(빈칸포함) 글자인 g를 반환한다. 
 document.write(t.indexOf("you"), "<br/>");              // 첫 you의 시작은 13번째 즉, 인덱스가 12가 반환된다.
@@ -347,3 +348,35 @@ var t = str.charCodeAt(0);                              // 문자에 저장된 �
 
 document.write(t);                                      // "A"의 아스키 코드값 65를 출력함.
 document.write(String.fromCharCode(65), "<br/>");       // 코드값 65에 해당하는 문자를 반환함. 
+
+// string object ex.2
+var userName = prompt("당신의 영문 이름은?", "");           // abc라고 입력하면
+
+var upperName = userName.toUpperCase();                 
+document.write(upperName, "<br>");                      // ABC라고 반환함
+
+var userNum = prompt("당신의 연락처는?", "");                           //12345678을 입력하면
+var result = userNum.substring(0, userNum.length - 4) + "****";     
+document.write(result, "<br>");                                     //1234****을 반환함.
+
+// string object ex.2
+var userEmail = prompt("당신의 이메일 주소는?", "");
+var arrUrl = ["co.kr", ".com", ".net", ".or.kr", ".go.kr"];
+
+var check1 = false;
+var check2 = false;
+
+// 이상한 이메일로 작성해도 옳은 이메일로 간주한다. 추가적인 조건을 넣어서 더 확실하게 만들어야 함.
+if(userEmail.indexOf("@") >  0) {check1 = true;}    // @가 포함되었다면, 옳은 이메일로 판정한다.
+
+for(var i = 0; i < arrUrl.length; i++) {
+    if(userEmail.indexOf(arrUrl[i]) > 0) {          // arrUrl 중 하나라도 포함이 되어있다면, 옳은 이메일로 판정한다,
+        check2 = true;
+    }
+}
+
+if(check1 && check2) {
+    document.write(userEmail);                      // 1,2 조건을 모두 만족하면, 옳은 이메일로 간주한다.
+} else {
+    alert("이메일 형식이 잘못되었습니다.");
+}
